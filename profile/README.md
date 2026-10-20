@@ -1,36 +1,32 @@
-# asobeast
+# AsoBeast
 
-**Free, open-source, self-hosted App Store Optimization (ASO) for indie developers and small teams.**
+**Open source App Store Optimization (ASO) tool and keyword rank tracker for the Apple App Store and Google Play.**
 
-asobeast is an ASO keyword research and rank tracking toolkit for the Apple App Store and Google Play. Import an app URL to track keywords across markets, monitor daily rankings, analyze competitors, reviews and metadata, and turn your historical data into prioritized actions.
+AsoBeast imports an app from its store URL, tracks keyword rankings every day to a depth of 200, watches competitors, reviews and metadata, and turns that history into a prioritized queue of ASO work. Run it on your own server with Docker Compose, or use the hosted service at [asobeast.com](https://asobeast.com). Both run the same code, and the self-hosted edition has every feature.
 
-## What can asobeast do?
+## What it does
 
-- Research and track App Store and Google Play keywords across multiple countries
-- Monitor daily keyword positions, ranking history, SERPs and category charts
-- Score keyword traffic, difficulty and app-specific opportunity transparently
-- Compare competitors and discover keyword coverage gaps
-- Track reviews, ratings, metadata snapshots and listing changes
-- Turn collected data into an explainable ASO Action Center
-- Provide a web dashboard, REST API and read-only MCP server
-- Add optional AI-assisted audits and metadata drafts with your own OpenAI key
+- Tracks keywords per storefront, so one app covers many countries from one listing
+- Scores popularity and difficulty with the evidence, calculation version and confidence behind each number
+- Finds competitors from live search results and shows the keyword gaps between you
+- Syncs reviews and ratings, drafts replies, and records every change to your metadata and your competitors'
+- Produces an Action Center of deterministic recommendations, each with a priority, the numbers behind it and a measured outcome
+- Sends rank, SERP, metadata, review and action alerts by signed webhook or email
+- Serves a Model Context Protocol endpoint with 36 read tools and 5 opt-in write tools, so Claude Code, Cursor, VS Code and other MCP clients can work with your instance
 
-## Why self-host asobeast?
+## Where your data goes
 
-Every store request runs on the machine hosting asobeast. Your ASO data stays in your deployment unless you explicitly enable an outbound integration such as email alerts, webhooks or OpenAI assistance.
-
-There is no per-keyword subscription. You control the infrastructure, data retention and integrations.
+Every store request runs on the machine hosting AsoBeast, as an ordinary public search. Your keyword list stays in your database and is never sent to an ASO vendor. Email, webhooks, OpenAI and Apple Ads are outbound integrations that stay off until you configure them.
 
 ## Get started
 
-Run asobeast with Docker Compose and import your first App Store or Google Play listing in about five minutes.
-
-- [Read the documentation](https://docs.asobeast.com)
-- [Follow the quickstart](https://docs.asobeast.com/quickstart)
-- [Explore the source code](https://github.com/MrAdex77/asobeast)
-- [View releases](https://github.com/MrAdex77/asobeast/releases)
-- [Contribute to asobeast](https://github.com/MrAdex77/asobeast/blob/main/CONTRIBUTING.md)
+- [Source code](https://github.com/AsoBeast/asobeast)
+- [Quickstart](https://docs.asobeast.com/quickstart), Docker Compose to a tracked app in about five minutes
+- [Documentation](https://docs.asobeast.com)
+- [Releases](https://github.com/AsoBeast/asobeast/releases)
+- [Contributing](https://github.com/AsoBeast/asobeast/blob/main/CONTRIBUTING.md)
+- [Security policy](https://github.com/AsoBeast/asobeast/blob/main/SECURITY.md)
 
 ## License
 
-asobeast is free and open-source software licensed under the [GNU AGPL-3.0](https://github.com/MrAdex77/asobeast/blob/main/LICENSE).
+AsoBeast is licensed under the [GNU AGPL-3.0](https://github.com/AsoBeast/asobeast/blob/main/LICENSE), with no open core and no feature held back from the self-hosted edition.
