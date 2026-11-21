@@ -1,32 +1,35 @@
-# AsoBeast
+<div align="center">
+  <a href="https://asobeast.com/?utm_source=github&utm_medium=readme&utm_campaign=org-profile"><img src="https://raw.githubusercontent.com/AsoBeast/asobeast/main/docs/images/logo-mark.png" alt="AsoBeast logo" width="96" /></a>
+  <h1>AsoBeast</h1>
+  <p><strong>AsoBeast is an open-source App Store Optimization (ASO) tool and keyword rank tracker for the Apple App Store and Google Play.</strong></p>
+  <p>Use the hosted service at <a href="https://asobeast.com/?utm_source=github&utm_medium=readme&utm_campaign=org-profile">asobeast.com</a>, 7 days free on a card and then from $10 a month, or self-host it free with Docker under AGPL-3.0. Both run the same code.</p>
+  <p>
+    <a href="https://app.asobeast.com/register?utm_source=github&utm_medium=readme&utm_campaign=org-profile"><img alt="Start a free 7-day AsoBeast trial" src="https://img.shields.io/badge/Start_free_7--day_trial-a8520a?style=for-the-badge" /></a>
+    <a href="https://github.com/AsoBeast/asobeast#quick-start"><img alt="Self-host AsoBeast with Docker" src="https://img.shields.io/badge/Self--host_with_Docker-57606a?style=for-the-badge" /></a>
+  </p>
+  <p>
+    <a href="https://github.com/AsoBeast/asobeast/blob/main/LICENSE"><img alt="License: AGPL-3.0" src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" /></a>
+    <a href="https://github.com/AsoBeast/asobeast/releases"><img alt="Latest AsoBeast release" src="https://img.shields.io/github/v/release/AsoBeast/asobeast" /></a>
+    <a href="https://github.com/AsoBeast/asobeast/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AsoBeast/asobeast?style=flat" /></a>
+  </p>
+  <p>
+    <a href="https://github.com/AsoBeast/asobeast">Source code</a> ·
+    <a href="https://docs.asobeast.com">Docs</a> ·
+    <a href="https://docs.asobeast.com/quickstart">Quickstart</a> ·
+    <a href="https://docs.asobeast.com/mcp/introduction">MCP server</a> ·
+    <a href="https://github.com/AsoBeast/asobeast/releases">Releases</a> ·
+    <a href="https://docs.asobeast.com/support">Support</a>
+  </p>
+</div>
 
-**Open source App Store Optimization (ASO) tool and keyword rank tracker for the Apple App Store and Google Play.**
+<a href="https://github.com/AsoBeast/asobeast"><img src="https://raw.githubusercontent.com/AsoBeast/asobeast/main/docs/images/readme/dashboard.png" alt="AsoBeast dashboard: App Store and Google Play search visibility over 90 days, keyword movers and the next ASO actions" width="100%" /></a>
 
-AsoBeast imports an app from its store URL, tracks keyword rankings every day to a depth of 200, watches competitors, reviews and metadata, and turns that history into a prioritized queue of ASO work. Run it on your own server with Docker Compose, or use the hosted service at [asobeast.com](https://asobeast.com). Both run the same code, and the self-hosted edition has every feature.
+## What is AsoBeast?
 
-## What it does
+AsoBeast imports an app from its App Store or Google Play URL and checks its keyword rankings every day in each country you track. It also follows competitors, reviews and listing changes, and ranks the ASO work worth doing next. AsoBeast is an open-source alternative to AppTweak and AppFollow for keyword research and rank tracking, built for indie developers, small studios and agencies.
 
-- Tracks keywords per storefront, so one app covers many countries from one listing
-- Scores popularity and difficulty with the evidence, calculation version and confidence behind each number
-- Finds competitors from live search results and shows the keyword gaps between you
-- Syncs reviews and ratings, drafts replies, and records every change to your metadata and your competitors'
-- Produces an Action Center of deterministic recommendations, each with a priority, the numbers behind it and a measured outcome
-- Sends rank, SERP, metadata, review and action alerts by signed webhook or email
-- Serves a Model Context Protocol endpoint with 36 read tools and 5 opt-in write tools, so Claude Code, Cursor, VS Code and other MCP clients can work with your instance
+A self-hosted AsoBeast sends store requests from your own server, needs no ASO vendor account and has no telemetry. Every instance serves an MCP server and an HTTP API, so Claude, Cursor and other AI agents can read your ASO data.
 
-## Where your data goes
+Everything lives in one repository, [AsoBeast/asobeast](https://github.com/AsoBeast/asobeast), whose README covers the features, the quick start and the FAQ. If AsoBeast works for you, a star on that repository helps other app developers find it.
 
-Every store request runs on the machine hosting AsoBeast, as an ordinary public search. Your keyword list stays in your database and is never sent to an ASO vendor. Email, webhooks, OpenAI and Apple Ads are outbound integrations that stay off until you configure them.
-
-## Get started
-
-- [Source code](https://github.com/AsoBeast/asobeast)
-- [Quickstart](https://docs.asobeast.com/quickstart), Docker Compose to a tracked app in about five minutes
-- [Documentation](https://docs.asobeast.com)
-- [Releases](https://github.com/AsoBeast/asobeast/releases)
-- [Contributing](https://github.com/AsoBeast/asobeast/blob/main/CONTRIBUTING.md)
-- [Security policy](https://github.com/AsoBeast/asobeast/blob/main/SECURITY.md)
-
-## License
-
-AsoBeast is licensed under the [GNU AGPL-3.0](https://github.com/AsoBeast/asobeast/blob/main/LICENSE), with no open core and no feature held back from the self-hosted edition.
+AsoBeast is licensed under [AGPL-3.0-only](https://github.com/AsoBeast/asobeast/blob/main/LICENSE), with no open core. AppTweak and AppFollow are trademarks of their owners and are named only to describe alternatives.
